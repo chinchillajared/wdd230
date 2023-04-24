@@ -42,11 +42,24 @@ ul li{
 }
 
 .home-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 2%;
+    text-align: center;
     background-color: #0a2342;
     color: white;
     border-radius: 10px;
     height: 45px;
 }
+
+.update{
+    margin: 0%;
+    color: white;
+    animation-name:color-effect;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+
+@keyframes color-effect{
+    from{color: black;}
+    to{color: white;}
+  }
