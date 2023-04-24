@@ -10,8 +10,10 @@ body{
     grid-template-columns: 25% 1fr;
     height: 150px;
     align-items: center;
-    background-color: #6a8eae;
+    background-color: #0a2342;
+    color: white;
     border-radius: 10px;
+    box-shadow: 3px black;
 }
 
 .main-photo{
@@ -43,7 +45,8 @@ ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #6a8eae;
+    background-color: #0a2342;
+    color: white;
     border-radius: 10px;
     height: 45px;
 }
