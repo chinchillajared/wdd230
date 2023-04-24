@@ -1,0 +1,46 @@
+body{
+    text-align: left;
+    max-width: 40%;
+    margin: auto;
+}
+
+
+
+.header{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    height: 150px;
+    align-items: center;
+    background-color: #6a8eae;
+    border-radius: 10px;
+}
+
+.main-photo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 50%;
+    justify-self: center;
+}
+
+.my-name{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+}
+
+.sub-title{
+    border-bottom: solid 1px black;
+}
+
+ul li{
+    margin: 8px;
+}
+
+.paragraph{
+    border-top: solid 1px black;
+}
+
+.home-footer{
+    background-color: #6a8eae;
+    border-radius: 10px;
+}
