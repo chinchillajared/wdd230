@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@600&display=swap');
+
+body{
+    margin: 0%;
+}
+
+
+
+.nav-grid{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #232F3E;
+   
+}
+
+nav div li{
+    list-style: none;
+}
+
+nav div li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav div li a:hover, .hover-button:hover{
+    color: rgb(3, 202, 209);
+}
+
+.home-grid{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 1fr 10% 1fr 10% 1fr;
+    justify-items: center;
+}
+
+.image-title{
+    grid-row: 1;
+}
+
+.logo-image{
+    grid-row: 2;
+    width: 35%;
+}
+
+.site-purpose{
+    grid-row: 3;
+}
+
+.site-purpose-paragraph{
+    grid-row: 4;
+    width: 90%;
+}
+
+.domain-title{
+    grid-row: 5;
+}
+
+.domain{
+    grid-row: 6;
+}
+
+footer{
+    text-align: center;
+}
+
+.logo{
+    width: 50%;
+}
+
+p, footer{
+    font-family: 'Lora', serif;
+}
+
+a, h1{
+    font-family: 'Bebas Neue', cursive;
+
+} 
+
+/*------------------Target audience---------------------------*/
+
+.audience-title{
+    text-align: center;
+}
+
+.personas-grid{
+    display: grid;
+    grid-template-rows: 10% 40% 40%;
+    justify-items: center;
+}
+
+.personas1{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.personas2{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.target-paragraph{
+    grid-row: 1;
+    width: 80%;
+}
+
+.personas-grid img{
+    width: 80%;
+}
+
+/*-----------------------typography-----------------*/
+
+.typography-title{
+    text-align: center;
+}
+
+.typography-grid{   
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;    
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    justify-items: center;
+    border: black solid 2px;
+}
+
+.titles1{
+    grid-column: 1;
+    grid-row: 1;
+    
+
+}
+
+.titles2{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+
+
+}
+
+.paragraphs1{
+    grid-column: 1;
+    grid-row: 2;
+
+}
+
+.paragraphs2{
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+
+
+}
+
+/*----------------------color scheme----------------------------------------*/
+
+.color-title{
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+}
+
+main ul{
+    padding: 0%;
+}
+
+.color-grid{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    max-width: 20%;
+    margin: auto;
+    font-family: 'Lora', serif;
+}
+
+.scheme1{
+    padding: 0.5em;
+    background-color: #232F3E;
+    color: white;
+}
+
+.scheme2{
+    text-align: center;
+}
+
+.scheme3{
+    text-align: center;
+
+}
+
+.scheme4{
+    padding: 0.5em;
+    color: white;
+    background-color: #232F3E;
+}
+
+.scheme5{
+    padding: 0.5em;
+    color: white;
+    background-color: #007fff;
+}
+
+.desing-footer{
+    display: grid;
+    height: 200px;
+    align-items: end;
+}
