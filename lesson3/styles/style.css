@@ -2,9 +2,13 @@
 
 body{
     margin: 0%;
+    font-size: 20px;
+    font-family: 'Lora', serif;
 }
 
-
+body h1, h2{
+    font-family: 'Bebas Neue', cursive;
+}
 
 .nav-grid{
     display: flex;
@@ -111,6 +115,23 @@ a, h1{
     width: 80%;
 }
 
+.scenarios-grid{
+    display: grid;
+    grid-template-rows: repeat(6, 25%);
+    justify-items: center;
+}
+
+main section h2{
+    grid-row: 1;
+    text-align: center;
+}
+
+main section li{
+    text-align: center;
+    list-style: none;
+    width: 90%;
+}
+
 /*-----------------------typography-----------------*/
 
 .typography-title{
@@ -153,8 +174,6 @@ a, h1{
     grid-column: 2;
     grid-row: 2;
     justify-self: center;
-
-
 }
 
 /*----------------------color scheme----------------------------------------*/
