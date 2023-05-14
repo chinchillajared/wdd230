@@ -5,6 +5,7 @@ function nav_menu(){
 }
 
 const hamburger_button = document.getElementById('hamburger');
+const hamburger_icon = document.getElementById('hamburger-icon');
 
 hamburger_button.onclick = nav_menu;
 
