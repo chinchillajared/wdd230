@@ -25,7 +25,7 @@ function additem() {
 
     //Validate if the input is empty
     if (chapter == '') {
-        alert("Input must be filled out");
+        alert("Input must be filled out!");
         return false;
     }
 
