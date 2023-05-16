@@ -4,7 +4,6 @@ const text_input = document.querySelector("input");
 const add_button = document.querySelector("button");
 const chapter_list = document.querySelector("ul");
 
-
 add_button.addEventListener("click", function () {
 
     //Set focus on the text field when the button is pressed
@@ -17,7 +16,6 @@ add_button.addEventListener("click", function () {
     if (chapter == ''){
         alert("Name must be filled out");
         return false;
-
     }
 
     //Empty the text field
@@ -37,8 +35,18 @@ add_button.addEventListener("click", function () {
     //Add style to the li element
     new_chapter.setAttribute('class', 'item');
 
-    //Add the new item to the list
+    //Conditional to limit the items in the list to 10
+    let li_item = chapter_list.querySelectorAll("li");
+    let items= li_item.length;
+    
+    if (items == 10){
+        alert("You reached the limit of items!");
+        return false;
+    }
+
+    //If there are less than 10 items add the new item to the list
     chapter_list.appendChild(new_chapter);
+
 
     //Delete the item when the delete button is pressed
     delete_button.onclick = function (e) {
@@ -46,6 +54,4 @@ add_button.addEventListener("click", function () {
 
         text_input.focus();
     }
-
-
 });
