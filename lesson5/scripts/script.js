@@ -4,7 +4,18 @@ const text_input = document.querySelector("input");
 const add_button = document.querySelector("button");
 const chapter_list = document.querySelector("ul");
 
-add_button.addEventListener("click", function () {
+//Add an item if the button is pressed
+add_button.addEventListener("click", additem) 
+
+//Add an item if the enter key is pressed
+text_input.addEventListener("keyup", function(event){
+    if (event.key == "Enter"){
+        additem();
+    }
+});
+
+//Function to add an item to the list
+function additem() {
 
     //Set focus on the text field when the button is pressed
     text_input.focus();
@@ -13,8 +24,8 @@ add_button.addEventListener("click", function () {
     let chapter = text_input.value;
 
     //Validate if the input is empty
-    if (chapter == ''){
-        alert("Name must be filled out");
+    if (chapter == '') {
+        alert("Input must be filled out");
         return false;
     }
 
@@ -37,9 +48,9 @@ add_button.addEventListener("click", function () {
 
     //Conditional to limit the items in the list to 10
     let li_item = chapter_list.querySelectorAll("li");
-    let items= li_item.length;
-    
-    if (items == 10){
+    let items = li_item.length;
+
+    if (items == 10) {
         alert("You reached the limit of items!");
         return false;
     }
@@ -54,4 +65,4 @@ add_button.addEventListener("click", function () {
 
         text_input.focus();
     }
-});
+}
