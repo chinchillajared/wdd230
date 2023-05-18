@@ -144,8 +144,71 @@ main section, main div {
     background-color: rgb(231, 230, 230);
 }
 
-main section:nth-child(1) {
+.action-sec {
     margin-top: 1.5rem;
+    position: relative;
+    box-shadow: 7px 7px rgb(231, 230, 230);
+}
+
+.action-sec img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.action-sec h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    position: absolute;
+    top: 1%;
+    left: 5%;
+}
+
+.action-sec a{
+    position: absolute;
+    bottom: 8%;
+    right: 10%;
+    color: black;
+    background-color: white;
+    padding: .5rem;
+    width: 35%;
+    border-radius: 5px;
+    border: solid 2px black;
+    text-decoration: none;
+}
+
+.action-sec a:hover{
+    background-color: rgb(3, 202, 209);
+}
+
+.event-sec p {
+    margin: 0;
+}
+
+.weather-sec{
+    position: relative;
+    background-color: black;
+    color: White;
+}
+
+.weather-sec img{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 20%;
+}
+
+.weather-sec h3{
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
+.weather-sec p{
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
 }
 
 main div{
@@ -153,11 +216,14 @@ main div{
     grid-row: 5/7;
     display: grid;
     justify-items: center;
-    gap: 1.5rem;
 }   
 
 .spotlight1, .spotlight2, .spotlight3{
     background-color: rgb(199, 199, 199);
+}
+
+.spotlight1{
+    margin-top: 24px;
 }
 
 .spotlight2{

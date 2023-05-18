@@ -93,6 +93,17 @@
         grid-column: 2/4;
     }
 
+    .weather-sec img{
+        width: 25%;
+        left: 25%;
+    }
+
+    .weather-sec h3{
+        font-size: 2rem;
+        left: 60%;
+        top: 20%;
+    }
+
     .spotlight3, .joint-section{
         display: block;
     }

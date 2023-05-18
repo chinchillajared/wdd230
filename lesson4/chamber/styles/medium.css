@@ -57,6 +57,11 @@
         display: flex;    
     } 
 
+    .weather-sec img{
+        width: 13%;
+        left:35%;
+    }
+
     .spotlight1{
         margin-left: 25px;
         margin-bottom: 25px;
