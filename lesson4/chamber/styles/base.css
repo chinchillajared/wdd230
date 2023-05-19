@@ -97,7 +97,7 @@ header nav ul li a:hover {
     filter: blur(8px);
 }
 
-.hide, .spotlight3, .joint-section {
+.hide, .spotlight3, .joint-sec {
     display: none;
 }
 
@@ -179,10 +179,7 @@ main section, main div {
 
 .action-sec a:hover{
     background-color: rgb(3, 202, 209);
-}
-
-.event-sec{
-    background-color: #6cae75;
+    transform: scale(1.1);
 }
 
 .event-sec p {
@@ -215,40 +212,45 @@ main section, main div {
     bottom: 10%;
 }
 
-.news-sec{
-    background-color: #6cae75;
+.news-sec, .joint-sec, .event-sec{
+    background-color: #232F3E;
+    color: white;
 }
 
 main div{
     margin-bottom: 1.5rem;
     grid-row: 5/8;
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
 }   
 
-.spotlight1, .spotlight2, .spotlight3{
-    background: radial-gradient(#0b7189 34%, #3a7d44 100%);
+main div section{
+    width: 100%;
+    height: 50%;
 }
 
-.spotlight1{
-    margin-top: 24px;
+.spotlights section{
+    background-color: #232F3E;
 }
 
-.spotlight1 img{
-    width: 35%;
-    border-radius: 5px;
+
+.spotlights section a{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+}
+.spotlights section a:hover{
+    color: rgb(3, 202, 209)
 }
 
-.spotlight2{
-    border-top: solid 1px rgb(231, 230, 230);
-    margin-bottom: 24px;
-}
-
-.spotlight2 img{
-    width: 15rem;
-    height: 4rem;
+.spotlights section img{
+    width: 100%;
+    height: 50px;
     object-fit: cover;
-    border-radius: 5px;
+}
+
+.spotlight2, .spotlight3{
+    border-top: 2px solid white;
 }
 
 footer {
