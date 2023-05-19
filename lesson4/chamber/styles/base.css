@@ -181,6 +181,10 @@ main section, main div {
     background-color: rgb(3, 202, 209);
 }
 
+.event-sec{
+    background-color: #6cae75;
+}
+
 .event-sec p {
     margin: 0;
 }
@@ -211,23 +215,40 @@ main section, main div {
     bottom: 10%;
 }
 
+.news-sec{
+    background-color: #6cae75;
+}
+
 main div{
     margin-bottom: 1.5rem;
-    grid-row: 5/7;
+    grid-row: 5/8;
     display: grid;
     justify-items: center;
 }   
 
 .spotlight1, .spotlight2, .spotlight3{
-    background-color: rgb(199, 199, 199);
+    background: radial-gradient(#0b7189 34%, #3a7d44 100%);
 }
 
 .spotlight1{
     margin-top: 24px;
 }
 
+.spotlight1 img{
+    width: 35%;
+    border-radius: 5px;
+}
+
 .spotlight2{
+    border-top: solid 1px rgb(231, 230, 230);
     margin-bottom: 24px;
+}
+
+.spotlight2 img{
+    width: 15rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 footer {

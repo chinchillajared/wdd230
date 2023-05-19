@@ -53,7 +53,7 @@
     }
 
     main div{
-        grid-row: 4;
+        grid-row: 4/6;
         display: flex;    
     } 
 
