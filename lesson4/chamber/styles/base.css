@@ -231,14 +231,9 @@ main div section{
 
 .spotlights section{
     background-color: #232F3E;
-}
-
-
-.spotlights section a{
     color: white;
-    text-decoration: none;
-    height: 100%;
 }
+
 .spotlights section a:hover{
     color: rgb(3, 202, 209)
 }
