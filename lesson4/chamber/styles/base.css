@@ -97,7 +97,7 @@ header nav ul li a:hover {
     filter: blur(8px);
 }
 
-.hide, .spotlight3, .joint-sec {
+.hide, .spotlight3, .join-sec {
     display: none;
 }
 
@@ -212,7 +212,7 @@ main section, main div {
     bottom: 10%;
 }
 
-.news-sec, .joint-sec, .event-sec{
+.news-sec, .join-sec, .event-sec{
     background-color: #232F3E;
     color: white;
 }

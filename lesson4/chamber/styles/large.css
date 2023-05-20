@@ -83,7 +83,7 @@
         grid-column: 1/2;
     }
 
-    .joint-sec{
+    .join-sec{
         grid-row: 3/4;
         grid-column: 1/2;
     }
@@ -104,7 +104,7 @@
         top: 20%;
     }
 
-    .spotlight3, .joint-sec{
+    .spotlight3, .join-sec{
         display: block;
     }
 
