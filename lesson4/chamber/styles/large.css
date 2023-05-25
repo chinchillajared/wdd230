@@ -95,13 +95,21 @@
 
     .weather-sec img{
         width: 25%;
-        left: 25%;
+        left: 15%;
     }
 
     .weather-sec h3{
         font-size: 2rem;
         left: 60%;
         top: 20%;
+    }
+
+    .wind-speed{
+        right: 7%;
+    }
+    
+    .wind-child{ 
+        right: 13%;
     }
 
     .spotlight3, .join-sec{

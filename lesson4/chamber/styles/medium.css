@@ -59,6 +59,14 @@
         width: 13%;
         left:35%;
     }
+
+    .wind-speed{
+        right: 25%;
+    }
+    
+    .wind-child{ 
+        right: 28%;
+    }
     
     main div{
         grid-row: 4/6;
