@@ -123,10 +123,12 @@
         flex-direction: column;
     }
 
-
+    footer div:nth-child(2){
+        flex-direction: row;
+    }
     
     footer div img {
-        width: 10%;
+        width: 8%;
     }
 }
 

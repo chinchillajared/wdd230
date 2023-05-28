@@ -1,12 +1,10 @@
 //Get the Temperature from the weather section
 let temperature_value = document.getElementById('temperature').textContent;
 const f_temperature = parseInt(temperature_value) * 1.8 + 32;
-console.log(f_temperature);
 
 //Get the wind speed
 let wind_value = document.getElementById('wind-speed').textContent;
 const m_wind_speed = parseInt(wind_value) / 1.6093;
-console.log(m_wind_speed);
 
 //Specification limits  (<=50°F and >3.0mph)
 if (f_temperature >= 50 || m_wind_speed < 3){
