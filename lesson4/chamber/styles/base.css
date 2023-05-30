@@ -24,6 +24,10 @@ header section{
     padding: .5rem;
 }
 
+#dynamic-banner{
+    display: none;
+}
+
 header section h2{
     margin: 0;
     align-self: center;

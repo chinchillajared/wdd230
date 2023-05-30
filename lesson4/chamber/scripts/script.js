@@ -33,19 +33,16 @@ const banner = document.getElementById('dynamic-banner')
 
 //Get the current day
 let day_of_week = today.getDay();
-
+ 
 //Conditional to show the banner depending of the day
-if (day_of_week == 0 || day_of_week == 1){
-    banner.classList.toggle('show');
+if (day_of_week === 1 || day_of_week === 2){
+    banner.style.display = 'block';
 }
 
-else{
-    banner.classList.toggle('hide');
-}
 
 //Remove the banner when the X button is pressed
 const remove_banner = document.getElementById('remove')
 
 remove_banner.addEventListener('click', function(){
-    banner.classList.toggle('hide');
+    banner.style.display = 'none';
 })
