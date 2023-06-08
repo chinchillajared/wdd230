@@ -9,6 +9,30 @@ const year = today.getFullYear();
 document.getElementById("current-year").textContent = `${year} Well Union Commerce Association`;
 
 
+//display the amount of time in days (rounded to a whole number) between user visits to this page by the user's agent (browser).
+
+
+if (localStorage.getItem("first_time_visit") === null) {
+
+localStorage.setItem("first_time_visit", Date.now());
+
+}
+
+let last_visit = Date.now() - localStorage.getItem("first_time_visit");
+
+let seconds = last_visit / 1000;
+let minutes = seconds / 60;
+let hours = minutes / 60;
+let days = Math.floor(hours / 24);
+
+if(days === 1) {
+    document.getElementById("last-visit").textContent = `Your last visit was ${days} day ago 🌎`;
+}
+
+else{
+    document.getElementById("last-visit").textContent = `Your last visit was ${days} days ago 🌎`;
+}
+
 
 //---------------------------------- Lazy load ----------------------------------
 const images = document.querySelectorAll('[data-src]');
@@ -42,3 +66,5 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 images.forEach(image => {
     imgObserver.observe(image);
 });
+
+

@@ -130,6 +130,20 @@
     footer div img {
         width: 8%;
     }
+
+    /*----------------- Discover page -------------------------*/
+
+    .discover-grid section{
+        width: 40%;
+    }
+
+    .discover-grid section p{
+        padding: 5%;
+    }
+
+    .discover-header a{
+        padding: 3%;
+    }
 }
 
 
