@@ -52,6 +52,10 @@ ul li{
     margin: 8px;
 }
 
+ul a:hover{
+    color: green;
+}
+
 .paragraph{
     border-top: solid 1px black;
 }
