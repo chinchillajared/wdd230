@@ -1,5 +1,5 @@
 main{
-    margin-top: 20%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,21 +8,33 @@ main{
 table{
     text-align: center;
     border-collapse: collapse;
-    background-color: burlywood;
+    font-family: sans-serif;
     border: solid 1px black;
+    width: 70%;
+    caption-side: bottom;
+}
+
+caption{
+    padding: 1rem;
 }
 
 thead tr th:nth-child(1){
-    background-color: #000;
+    background-color: #475841;
     color: #fff;
 }
 
-thead tr th:nth-child(2){
+table tbody th, td, thead tr th:not(:nth-child(1):nth-child(-n+1)){
     border: solid 1px black;
 }
 
+thead tr th:not(:nth-child(1):nth-child(-n+1)){
+    background-color: #E6E8E6;
+}
 
+th, td{
+    padding: 1rem;
+}
 
-td{
-    border: solid 1px black;
+table tbody tr:nth-child(2){
+    background-color: #E6E8E6;
 }
