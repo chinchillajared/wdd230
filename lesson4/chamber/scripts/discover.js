@@ -26,11 +26,11 @@ let hours = minutes / 60;
 let days = Math.floor(hours / 24);
 
 if(days === 1) {
-    document.getElementById("last-visit").textContent = `Your last visit was ${days} day ago 🌎`;
+    document.getElementById("last-visit").textContent = `Your First visit was ${days} day ago 🌎`;
 }
 
 else{
-    document.getElementById("last-visit").textContent = `Your last visit was ${days} days ago 🌎`;
+    document.getElementById("last-visit").textContent = `Your First visit was ${days} days ago 🌎`;
 }
 
 
