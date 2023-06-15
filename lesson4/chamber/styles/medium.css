@@ -99,5 +99,11 @@
 .discover-grid section img:hover{
     opacity: 0.3;
 }
+
+/*----------------- thank you page -------------------------*/
+
+.thankyou-page section{
+    width: 50%;
+}
     
 }

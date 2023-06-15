@@ -46,3 +46,33 @@ const remove_banner = document.getElementById('remove')
 remove_banner.addEventListener('click', function(){
     banner.style.display = 'none';
 })
+
+//---------------------------------------------- Discover page ----------------------------------------------
+
+//Add an event listener to the radio buttons    (rember to add the class seleceted to the labels and not the input)
+
+const radio_buttons = document.querySelectorAll('input[type="radio"]');
+
+let last_modified;
+
+radio_buttons.forEach(button => {
+    
+button.addEventListener('click', function(){
+    if(button.parentNode.classList.contains('selected')){
+        button.parentNode.classList.remove('selected');
+        
+    }
+    
+    else {
+        button.parentNode.classList.add('selected');
+        
+        if (last_modified) {
+            last_modified.parentNode.classList.remove('selected');
+          }
+
+          last_modified = button;
+    }
+
+});
+
+});

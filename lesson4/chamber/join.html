@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Our purpose is to support new businesses by providing them with the guidance 
+    and resources they need to succeed. We will also offer learning opportunities to business owners and entrepreneurs
+    through conferences and tutorials covering a wide range of topics. Our website will keep informing members about 
+    upcoming events and programs to improve the local area.">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="scripts/script.js" defer></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <section id="dynamic-banner">
+            <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. <button id="remove">❌</button>
+            </h2>
+        </section>
+        <nav id="nav-card">
+            <button id="hamburger">
+                <img src="images/menu.svg" id="hamburger-icon" alt="Menu button">
+            </button>
+            <ul id="display-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Activities calendar</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </nav>
+        <img src="images/well-union.webp" alt="Logo image (8 hands forming a circle)">
+        <h1>Well Union Commerce Association</h1>
+        <time></time>
+    </header>
+    <main class="join-page">
+        <form method="get" action="thankyou.html">
+            <fieldset class="form-top">
+                <legend>Personal Information</legend>
+                <div><span class="asterisk">* </span>
+                    Required field</div>
+                <label for="first-name"><span class="asterisk">*</span> First Name:
+                    <input type="text" id="first-name" name="first-name" required>
+                </label>
+
+                <label for="last-name"><span class="asterisk">*</span> Last Name:
+                    <input type="text" id="last-name" name="last-name" required>
+                </label>
+
+                <label for="email"><span class="asterisk">*</span> Email:
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </label>
+            </fieldset>
+
+            <fieldset class="form-midd">
+                <legend>Business Information</legend>
+                <label for="position-title">Business Position Title:
+                    <input type="text" id="position-title" name="position-title" pattern="[A-Za-z\s\-]{7,}"
+                        title="Please enter at least 7 alphabetical characters, spaces, or hyphens">
+                </label>
+
+                <label for="cell-phone"><span class="asterisk">*</span> Cell Phone Number:
+                    <input type="tel" id="cell-phone" name="cell-phone" placeholder="1234561245" required>
+                </label>
+
+                <label for="business-name"><span class="asterisk">*</span> Business Name/Title:
+                    <input type="text" id="business-name" name="business-name" required>
+                </label>
+
+                <label for="business-description">Business Description:
+                    <textarea id="business-description" name="business-description"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset class="form-bottom">
+                <legend>Membership</legend>
+
+                <div class="select-membership-title">Select your membership plan</div>
+                <div class="membership-container">
+
+                    <label>
+                        <input type="radio" name="membership-level" value="NP Membership">
+                        NP Membership $0
+                    </label>
+                    <div class="membership-info">
+                        <p>Designed specifically for non-profit organizations.</p>
+                        <ul>
+                            <li>Access to the community forum and resource library.</li>
+                        </ul>
+                    </div>
+
+                    <label>
+                        <input type="radio" name="membership-level" value="Bronze Membership">
+                        Bronze Membership $50/month
+                    </label>
+                    <div class="membership-info">
+                        <p>Offers essential features for individuals or organizations.</p>
+                        <ul>
+                            <li>Access to the community forum and resource library.</li>
+                            <li>Quarterly training sessions and workshops.</li>
+                            <li>Opportunity for limited advertising on the platform.</li>
+                            <li>10% discount on all events hosted by the platform.</li>
+                        </ul>
+                    </div>
+
+                    <label>
+                        <input type="radio" name="membership-level" value="Silver Membership">
+                        Silver Membership $100/month
+                    </label>
+                    <div class="membership-info">
+                        <p>Provides an upgraded experience for members who seek additional benefits.</p>
+                        <ul>
+                            <li>All the benefits of Bronze Membership.</li>
+                            <li>Monthly training sessions and workshops.</li>
+                            <li>Enhanced advertising opportunities, including spotlights on the home page.</li>
+                            <li>20% discount on all events hosted by the platform.</li>
+                        </ul>
+                    </div>
+
+                    <label>
+                        <input type="radio" name="membership-level" value="Gold Membership">
+                        Gold Membership $200/month
+                    </label>
+                    <div class="membership-info">
+                        <p>Offers the highest level of benefits and exclusive perks.</p>
+                        <ul>
+                            <li>All the benefits of Silver Membership.</li>
+                            <li>Unlimited access to training sessions and workshops.</li>
+                            <li>Priority advertising, featuring prominent placement on the home page.</li>
+                            <li>30% discount on all events hosted by the platform.</li>
+                            <li>Personalized support and consultation from platform experts.</li>
+                        </ul>
+                    </div>
+                </div>
+            </fieldset>
+
+            <input type="submit" class="form-button" value="Join to Well Union" acttion="thankyou.html">
+        </form>
+    </main>
+    <footer>
+        <div>
+            <img src="images/well-union.webp" alt="Logo image (8 hands forming a circle)">
+            <a href="https://www.google.com/maps" target="_blank">🗺️Location</a>
+        </div>
+        <div>
+            <p>WDD 230 Project</p>
+            <p id="today" class="update"></p>
+            <p> Jared Chinchilla Sanchez | Costa Rica</p>
+            <p>Contact: cs-reply@wellunion.com</p>
+            <p>Phone: 453-3657-1245</p>
+        </div>
+        <p>&copy;<span id="current-year"></span></p>
+    </footer>
+</body>
+
+</html>

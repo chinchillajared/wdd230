@@ -21,7 +21,8 @@ header section{
     background-color: #A9B4C2;
     color: black;
     width: 100%;
-    padding: .5rem;
+    padding: .5rem 0 .5rem 0;
+    text-align: center;
 }
 
 #dynamic-banner{
@@ -351,3 +352,147 @@ footer div:nth-child(2) {
     width: 80%;
 }
 
+/*----------------- join page -------------------------*/
+
+.join-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-page form{
+    width: 95%;
+    max-width: 50rem;
+}
+
+.join-page fieldset{
+    border: solid 2px #000;
+    margin: 3% 0 3% 0;
+}
+
+.join-page label{
+    display: block;
+}
+
+.form-top input, .form-midd input, .form-midd textarea{
+    width: 90%;
+    margin-bottom: 5%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.select-membership-title, .form-top div{
+    background-color: transparent;
+    width: fit-content;
+    font-size: .8rem;
+    margin: 3% 0 3% 0;
+    color: #232F3E;
+}
+
+.form-top div{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.form-midd{
+    padding: 3%;
+}
+
+
+.form-bottom input{
+    margin-bottom: 5%;
+}
+
+.membership-container{
+    width: 100%;
+    align-items: center;
+    background-color: #fff;
+    text-align: unset;
+}
+
+.membership-info{
+    width: 90%;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    background-color: #fff;
+    text-align: inherit;
+}
+
+.membership-info ul{
+    margin-top: 0;
+}
+
+.membership-container label{
+    border: solid 1px #000;
+    width: 90%;
+}
+
+.membership-container label input{
+    margin: .7rem;
+    transform: scale(1.5);
+    
+}
+
+.selected{
+    background-color: #232F3E;
+    color: #fff;
+}
+
+
+.form-button{
+    margin: 1% 0 3% 2.5%;
+    width: 95%;
+    padding: .8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-bottom label{
+    position: relative;
+    border-radius: 10px;
+}
+
+
+
+.form-button:hover{
+    background-color: rgb(3, 202, 209);
+}
+
+  .join-page input:valid:not(.form-button){
+    border: 2px solid green;
+  }
+
+  .asterisk{
+      color: red;
+      font-size: 1.5rem;
+  }
+
+/* ------------------------------------- thank you page ------------------------------------- */
+
+.thankyou-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.thankyou-page section{
+    background-color: #A9B4C2;
+    border-radius: 10px;
+    padding: 3%;
+    width: 90%;
+}
+
+.thankyou-page section a{
+    color: #000;
+    
+}
