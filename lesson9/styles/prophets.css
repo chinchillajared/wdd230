@@ -25,9 +25,11 @@ main div section{
 main div section h2{
     background-color: #fff;
     width: fit-content;
-    padding: 2%;
+    padding: 2% 5%;
     display: flex;
     justify-content: space-around;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main div section img{
