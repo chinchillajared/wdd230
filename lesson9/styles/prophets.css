@@ -1,0 +1,57 @@
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1{
+    border: solid 2px #000;
+    width: fit-content;
+    padding: .5rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+main div section{
+    background-color: #17b890;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px #999999;
+}
+
+main div section h2{
+    background-color: #fff;
+    width: fit-content;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+main div section img{
+    width: 80%;
+}
+
+main div section ul li{
+    list-style-type: none;
+    padding: 2%;
+    text-align: left;
+    background-color: #fff;
+    font-weight: bold;
+    border-left: solid 5px #000;
+}
+
+main div section ul li:nth-child(1){
+    border-top-left-radius: 10px;
+}
+
+main div section ul li:nth-child(4){
+    border-bottom-left-radius: 10px;
+}
+
+footer{
+    padding: 3% 0 1% 0;
+    text-align: center;
+}
