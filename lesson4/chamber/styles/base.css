@@ -494,3 +494,86 @@ footer div:nth-child(2) {
     color: #000;
     
 }
+
+/* ------------------------------------- directory page ------------------------------------- */
+
+.directory-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 50px 0 50px 0;
+}
+
+#directory-grid-v2{
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.directory-grid div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    gap: 8%;
+    padding: 3%;
+    background-color: #fff;
+    color: #000;
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border: solid 2px #000;
+}
+
+.directory-grid div h2{
+    padding: .7rem;
+}
+
+.directory-grid div a{
+    border-radius: 15px;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.directory-grid div a:hover{
+    background-color: rgb(3, 202, 209);
+}
+
+.active-button{
+    background-color: rgb(3, 202, 209);
+}
+
+
+.directory-grid section{
+    border-radius: 15px;
+    padding: 2%;
+    background-color: #fff;
+    border: solid 1px #000;
+    box-shadow: 5px 5px 5px #d0d0d0;
+}
+
+#directory-v3{
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.list-style{
+    width: 100%;
+    border-radius: 0;
+}
+
+.directory-grid section ul{
+    padding: 0;
+}
+
+.directory-grid section ul li{
+    list-style: none;
+    margin: 0;
+    padding: 3px;
+}
+
+.directory-grid section img{ 
+    width: 80%;
+    object-fit: cover;
+}
