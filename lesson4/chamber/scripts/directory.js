@@ -15,7 +15,7 @@ list_button.addEventListener("click", () => {
         image.classList.add("image-v2");
     });
 
-    const cards = document.querySelectorAll("section");
+    const cards = document.querySelectorAll("main section");
     cards.forEach(card => {
         card.classList.remove("cards");
         card.classList.add("cards-v2");
@@ -36,7 +36,7 @@ grid_button.addEventListener("click", () => {
         image.classList.remove("image-v2");
     });
 
-    const cards = document.querySelectorAll("section");
+    const cards = document.querySelectorAll("main section");
     cards.forEach(card => {
         card.classList.add("cards");
         card.classList.remove("cards-v2");
