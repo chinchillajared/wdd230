@@ -505,12 +505,15 @@ footer div:nth-child(2) {
     margin: 50px 0 50px 0;
 }
 
-#directory-grid-v2{
+.directory-grid-v2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 0;
-    margin-bottom: 0;
+    margin: 50px 0 0px 0;
 }
 
-.directory-grid div{
+.directory-body main div{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -524,18 +527,18 @@ footer div:nth-child(2) {
     border: solid 2px #000;
 }
 
-.directory-grid div h2{
+.directory-body main div h2{
     padding: .7rem;
 }
 
-.directory-grid div a{
+.directory-body main div a{
     border-radius: 15px;
     padding: 1%;
     display: flex;
     align-items: center;
 }
 
-.directory-grid div a:hover{
+.directory-body main div a:hover{
     background-color: rgb(3, 202, 209);
 }
 
@@ -544,7 +547,7 @@ footer div:nth-child(2) {
 }
 
 
-.directory-grid section{
+.cards{
     border-radius: 15px;
     padding: 2%;
     background-color: #fff;
@@ -552,28 +555,29 @@ footer div:nth-child(2) {
     box-shadow: 5px 5px 5px #d0d0d0;
 }
 
-#directory-v3{
-    width: 100%;
+.cards-v2{
     border-radius: 0;
-    box-shadow: none;
+    padding: 2%;
+    background-color: #fff;
+    border: solid 1px #000;
+    box-shadow: 5px 5px 5px #d0d0d0;
+    width: 100%;
 }
 
-.list-style{
-    width: 100%;
-    border-radius: 0;
+.image-v2{
+    display: none;
 }
 
-.directory-grid section ul{
+.directory-body main section ul{
     padding: 0;
 }
 
-.directory-grid section ul li{
+.directory-body main section ul li{
     list-style: none;
     margin: 0;
     padding: 3px;
 }
 
-.directory-grid section img{ 
+.directory-body main section img{ 
     width: 80%;
-    object-fit: cover;
 }

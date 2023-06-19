@@ -10,33 +10,44 @@ const url = "json/data.json";
 
 //Add event listener to the list button
 list_button.addEventListener("click", () => {
-    container.setAttribute("id", "directory-grid-v2");
-    container.querySelectorAll("main section").forEach(card => {
-        card.setAttribute("id", "directory-v3");
+    const images = document.querySelectorAll("section img");
+    images.forEach(image => {
+        image.classList.add("image-v2");
     });
+
+    const cards = document.querySelectorAll("section");
+    cards.forEach(card => {
+        card.classList.remove("cards");
+        card.classList.add("cards-v2");
+    });
+
+    const grid = document.querySelector("main");
+    grid.classList.remove("directory-grid");
+    grid.classList.add("directory-grid-v2");
+
     grid_button.classList.remove("active-button");
     list_button.classList.add("active-button");
-    //Remove the images from the cards
-    const cards = container.querySelectorAll("main section");
-    cards.forEach(card => {
-        let image = card.querySelector("img");
-        card.removeChild(image);
-    });
 });
 
 //Add event listener to the grid button
 grid_button.addEventListener("click", () => {
-    if(container.hasAttribute("id")) {
-        container.removeAttribute("id");
-    }
-    list_button.classList.remove("active-button");
-    grid_button.classList.add("active-button");
-    //Add the images to the cards
-    const cards = container.querySelectorAll("main section");
-    cards.forEach(card => {
-        container.removeChild(card);
+    const images = document.querySelectorAll("section img");
+    images.forEach(image => {
+        image.classList.remove("image-v2");
     });
-    getDirectory();
+
+    const cards = document.querySelectorAll("section");
+    cards.forEach(card => {
+        card.classList.add("cards");
+        card.classList.remove("cards-v2");
+    });
+
+    const grid = document.querySelector("main");
+    grid.classList.remove("directory-grid-v2");
+    grid.classList.add("directory-grid");
+
+    grid_button.classList.add("active-button");
+    list_button.classList.remove("active-button");
 });
 
 
@@ -50,6 +61,7 @@ async function getDirectory() {
     //Loop through the data and create the cards
     data.businesses.forEach(business => {
         const card = document.createElement("section");
+        card.classList.add("cards");
 
         const title = document.createElement("h2");
         title.textContent = business.name;
