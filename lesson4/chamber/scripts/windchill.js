@@ -17,4 +17,8 @@ else{
     document.getElementById('wind-child').innerText = wind_chill.toFixed(1);
 }
 
+//Current weather 
+
+//
+
 
