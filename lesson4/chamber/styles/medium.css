@@ -50,22 +50,18 @@
         margin-top: 25px;
     }
 
+    .wind-speed{
+        justify-self: end;
+    }
+    
+    .wind-child{
+        justify-self: start;
+        margin: 0 0 0 30px;
+    }
+
 
     main section, main div{
         grid-column: 1/3;
-    }
-
-    .weather-sec img{
-        width: 13%;
-        left:35%;
-    }
-
-    .wind-speed{
-        right: 25%;
-    }
-    
-    .wind-child{ 
-        right: 28%;
     }
     
     main div{
