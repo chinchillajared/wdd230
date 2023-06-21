@@ -3,10 +3,7 @@ const list_button = document.getElementById("list-button");
 const grid_button = document.getElementById("grid-button");
 const container = document.querySelector("main");
 
-
-
 const url = "json/data.json";
-
 
 //Add event listener to the list button
 list_button.addEventListener("click", () => {

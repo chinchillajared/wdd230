@@ -22,8 +22,6 @@ getWeather();
 //Display the data
 function displayData(data) {
 
-    console.log(data);
-
     //Distribute the data in variables
     let temperature = data.main.temp;
     let c_temperature = (temperature - 32) * 5 / 9;

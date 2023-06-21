@@ -39,12 +39,18 @@
         align-self: center;       
         gap: 1.5rem;
         justify-content: center;
-    
+        opacity: 1;
+        position: relative;
+        width: 100%;
     }
 
     header nav ul li a {
         background-color: #232F3E;
         color: white;
+    }
+
+    header nav ul li:nth-child(6) a{
+        border-radius: 0;
     }
 
     .active{
@@ -130,7 +136,7 @@
         padding: 3%;
     }
 
-    /* ------------------------------------- directory page ------------------------------------- */
+    /* ------------------------------------- Directory page ------------------------------------- */
 
     .directory-grid div{
         width: 60%;
@@ -149,6 +155,10 @@
         grid-column: 1/4;
         grid-row: 1;
      }
+
+     .cards-v2{
+        width: 50%;
+    }
     
      .directory-grid section{
         height: 100%;

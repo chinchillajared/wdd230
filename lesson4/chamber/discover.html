@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/script.js" defer></script>
     <title>Discover</title>
   </head>
   <body>
-    <header class="discover-header">
-      <img
-        src="images/well-union.webp"
-        alt="Logo image (8 hands forming a circle)"
-      >
-      <h1>Discover</h1>
-      <a href="index.html">Home <img src="images/home-icon.svg" alt="Home icon"></a>
+    <header>
+      <section id="dynamic-banner">
+        <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. <button id="remove">❌</button>
+        </h2>
+    </section>
+    <nav id="nav-card">
+        <button id="hamburger">
+            <img src="images/menu.svg" id="hamburger-icon" alt="Menu button">
+        </button>
+        <ul id="display-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Business directory</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </nav>
+    <img src="images/well-union.webp" alt="Logo image (8 hands forming a circle)">
+    <h1>Well Union Commerce Association</h1>
+    <time></time>
     </header>
     <main class="discover-grid">
       <span id="last-visit"></span>
@@ -113,17 +127,17 @@
     </main>
     <footer>
       <div>
-        <img
-          src="images/well-union.webp"
-          alt="Logo image (8 hands forming a circle)"
-        >
-      </div>
-      <div>
+        <img src="images/well-union.webp" alt="Logo image (8 hands forming a circle)">
+        <a href="https://www.google.com/maps" target="_blank">🗺️Location</a>
+    </div>
+    <div>
         <p>WDD 230 Project</p>
-        <p>Jared Chinchilla Sanchez | Costa Rica</p>
+        <p id="today" class="update"></p>
+        <p> Jared Chinchilla Sanchez | Costa Rica</p>
         <p>Contact: cs-reply@wellunion.com</p>
-      </div>
-      <p>&copy;<span id="current-year"></span></p>
+        <p>Phone: 453-3657-1245</p>
+    </div>
+    <p>&copy;<span id="current-year"></span></p>
     </footer>
   </body>
 </html>

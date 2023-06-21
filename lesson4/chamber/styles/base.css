@@ -66,18 +66,17 @@ header nav button {
 header nav ul {
     padding: 0;
     margin: 0;
-    width: 100%;
-    display: none;
+    width: 20%;
+    opacity: 0;
+    transition: all .5s;
+    position: absolute;
+    left: 0;
 }
-
-
 
 header nav ul li {
     list-style: none;
     text-align: center;
 }
-
-
 
 header nav ul li a {
     display: block;
@@ -89,12 +88,17 @@ header nav ul li a {
     height: 100%;
 }
 
+header nav ul li:nth-child(6) a {
+    border-bottom-right-radius: 15px;
+}
+
 header nav ul li a:hover {
     background-color: rgb(3, 202, 209);
 }
 
 .show {
-    display: block;
+    opacity: 1;
+    width: 70%;
 }
 
 .blur-efect {
@@ -176,7 +180,7 @@ main section, main div {
     bottom: 8%;
     right: 10%;
     color: black;
-    background-color: #FFD700;
+    background-color: #5c7a6b;
     padding: .5rem;
     width: 35%;
     border-radius: 5px;
@@ -313,32 +317,6 @@ footer div:nth-child(2) {
 
 /*----------------- Discover page -------------------------*/
 
-.discover-header a{
-    color: black;
-    text-decoration: none;
-    padding: 5%;
-    background-color: white;
-    text-align: center;
-    grid-column: 3/4;
-    grid-row: 1/4;
-    align-self: center;
-    justify-self: center;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.discover-header a:hover{
-    background-color: rgb(3, 202, 209);
-}
-
-.discover-header a img{
-    width: 25%;
-    margin: 0;
-}
-
 .discover-grid span{
     width: 100%;
     text-align: center;
@@ -403,7 +381,7 @@ footer div:nth-child(2) {
 .select-membership-title, .form-top div{
     background-color: transparent;
     width: fit-content;
-    font-size: .8rem;
+    font-size: .9rem;
     margin: 3% 0 3% 0;
     color: #232F3E;
 }
@@ -537,17 +515,16 @@ footer div:nth-child(2) {
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
+    border-bottom: solid 1px #000;
     gap: 8%;
     padding: 3%;
     background-color: #fff;
     color: #000;
-    border-top-right-radius: 5rem;
-    border-bottom-left-radius: 5rem;
-    border: solid 2px #000;
 }
 
 .directory-body main div h2{
     padding: .7rem;
+    font-size: 1rem;
 }
 
 .directory-body main div a{
@@ -568,9 +545,8 @@ footer div:nth-child(2) {
 
 .cards{
     border-radius: 15px;
-    padding: 2%;
     background-color: #fff;
-    border: solid 1px #000;
+    border: solid 1px #d0d0d0;
     box-shadow: 5px 5px 5px #d0d0d0;
 }
 
@@ -578,9 +554,8 @@ footer div:nth-child(2) {
     border-radius: 0;
     padding: 2%;
     background-color: #fff;
-    border: solid 1px #000;
-    box-shadow: 5px 5px 5px #d0d0d0;
-    width: 100%;
+    border-bottom: solid 1px #000;
+    width: 90%;
 }
 
 .image-v2{
