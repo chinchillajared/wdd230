@@ -8,16 +8,8 @@
     }
 
     header img {
-        width: 50%;
-        grid-row: 2/4;
-        grid-column: 1/2;
-        margin-top: 3rem;
+        width: 7.5rem;
     }
-    
-    header h1{
-        font-size: 2rem;
-    }
-
 
     header nav ul li a {
         background-color: white;
