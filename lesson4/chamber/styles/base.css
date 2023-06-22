@@ -332,6 +332,13 @@ footer div:nth-child(2) {
 
 /*----------------- Discover page -------------------------*/
 
+.discover-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
 .discover-grid span{
     width: 100%;
     text-align: center;
@@ -347,17 +354,14 @@ footer div:nth-child(2) {
     width: 80%;
     position: relative;
     padding-bottom: 3%;
+    background-color: #fff;
+    border: solid 1px #d0d0d0;
+    box-shadow: 5px 5px #d0d0d0;
+
 }
 
 .discover-grid section p{
     padding: 8%;
-}
-
-.discover-grid{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 5%;
 }
 
 .discover-grid section img{
@@ -537,6 +541,7 @@ footer div:nth-child(2) {
     color: #000;
 }
 
+
 .directory-body main div h2{
     padding: .7rem;
     font-size: 1rem;
@@ -555,6 +560,7 @@ footer div:nth-child(2) {
 
 .active-button{
     background-color: rgb(3, 202, 209);
+    border: solid 2px #000;
 }
 
 

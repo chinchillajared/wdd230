@@ -115,6 +115,14 @@
     grid-row: 1;
  }
 
+ .directory-grid section{
+    padding: 10px;
+ }
+
+ .directory-grid section ul li a{
+    overflow-wrap: break-word;
+ }
+
  .directory-body main div h2{
     font-size: 1.5rem;
 }
