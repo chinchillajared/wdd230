@@ -8,6 +8,7 @@ function nav_menu(){
     else {
         hamburger_icon.setAttribute('src', 'images/x.svg');
     }
+
 }
 
 const hamburger_button = document.getElementById('hamburger');
