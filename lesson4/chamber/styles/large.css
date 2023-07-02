@@ -98,6 +98,11 @@
         grid-column: 1/2;
     }
 
+    .join-sec p{
+        width: 90%;
+        margin: auto;
+    }
+
     main section:nth-child(4){
         grid-row: 3/4;
         grid-column: 2/4;
@@ -118,13 +123,31 @@
         flex-direction: column;
     }
 
+    footer{
+        font-size: 1rem;
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+    }
+
+    footer div:nth-child(1){
+        flex-direction: row;
+        gap: 1rem;
+    }
+
     footer div:nth-child(2){
         flex-direction: row;
+        grid-row: 2;
+        gap: 1rem;
     }
-    
-    footer div img {
-        width: 8%;
+
+    footer div:nth-child(3){
+        padding: 0;
     }
+
+    footer div:nth-child(3) p{
+        margin: 0;
+    }
+
 
     /*----------------- Discover page -------------------------*/
 

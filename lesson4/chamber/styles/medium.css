@@ -64,7 +64,11 @@
     main div{
         grid-row: 4/6;
         margin-top: 25px;
-    } 
+    }
+
+    footer {
+        font-size: .8rem;
+    }
 
 
 /*----------------- Discover page -------------------------*/

@@ -109,7 +109,9 @@ if (localStorage.getItem("first_time_visit") === null) {
     }
     
     else{
+        if(document.getElementById("last-visit") !== null){
         document.getElementById("last-visit").textContent = `Your First visit was ${days} days ago 🌎`;
+        }
     }
     
     
