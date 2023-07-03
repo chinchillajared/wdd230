@@ -94,11 +94,11 @@
     }
 
 .event-sec h2, .join-sec h2{
-    margin-top: 18%;
+    margin-top: 15%;
 }
 
 .news-sec h2{
-    margin-top: 9%;
+    margin-top: 7%;
 }
 
     .join-sec{
@@ -160,7 +160,7 @@
     /*----------------- Discover page -------------------------*/
 
     .discover-grid section{
-        width: 40%;
+        width: 30%;
     }
 
     .discover-grid section p{

@@ -74,6 +74,8 @@ fetch('json/data.json')
         }
     });
 
+    if(window.location.href.includes('index.html')){
+
     for(random_items.length = 0; random_items.length < 3;){
         let number = Math.floor(Math.random() * items.length);
         if(!random_items.includes(items[number])) {
@@ -104,6 +106,9 @@ fetch('json/data.json')
             }
         }
     }
+
+    }
+
 }); 
 
 
