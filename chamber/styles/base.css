@@ -113,6 +113,9 @@ header nav ul li a:hover {
     visibility: visible;
     width: 70%;
 }
+#remove{
+   cursor: pointer;
+}
 
 .noise{
     opacity: 0.3;

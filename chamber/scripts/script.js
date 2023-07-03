@@ -74,7 +74,7 @@ fetch('json/data.json')
         }
     });
 
-    if(window.location.href.includes('index.html')){
+    if(document.querySelector('.spotlight1') !== null){
 
     for(random_items.length = 0; random_items.length < 3;){
         let number = Math.floor(Math.random() * items.length);
