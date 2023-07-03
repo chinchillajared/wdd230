@@ -77,6 +77,11 @@ header nav ul li {
     text-align: center;
 }
 
+.active{
+    background-color: #232F3E;
+    color: white;
+}
+
 header nav ul li a{
     display: block;
     padding: .4rem;
@@ -97,7 +102,7 @@ header nav ul li a{
     width: 1.5rem;
 }
 
-header nav ul li:nth-child(6) a {
+header nav ul li:nth-child(7) a {
     border-bottom-right-radius: 15px;
 }
 
