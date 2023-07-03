@@ -60,6 +60,7 @@
     .active{
         color: rgb(3, 202, 209);
         border-bottom: solid 2px white;
+        background-color: #232F3E;
     }
 
 
@@ -244,6 +245,19 @@
         grid-column: 3/4;
         grid-row: 4;
      }
+
+/* ------------------------------------------ Contact page ------------------------------------------ */
+.contact-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+.contact-main form textarea{
+    width: 95%;
+}
     
 }
 

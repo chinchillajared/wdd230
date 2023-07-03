@@ -78,7 +78,7 @@ header nav ul li {
 }
 
 .active{
-    border: solid 2px #000;
+    background-color: #FFD700;
 }
 
 header nav ul li a{
