@@ -78,8 +78,7 @@ header nav ul li {
 }
 
 .active{
-    background-color: #232F3E;
-    color: white;
+    border: solid 2px #000;
 }
 
 header nav ul li a{
@@ -625,4 +624,18 @@ footer div a:hover {
 
 .directory-body main section img{ 
     width: 80%;
+}
+
+/* ------------------------------------- Contact page ------------------------------------- */
+
+.contact-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.contact-main form textarea{
+    width: 95%;
 }

@@ -45,108 +45,26 @@
         <h1>Well Union Commerce Association</h1>
         <time></time>
     </header>
-    <main class="join-page">
-        <form method="get" action="thankyou.html">
+    <main class="contact-main">
+        <h2>Contact Us</h2>
+        <form action="#">
             <fieldset class="form-top">
-                <legend>Personal Information</legend>
                 <div><span class="asterisk">* </span>
                     Required field</div>
-                <label for="first-name"><span class="asterisk">*</span> First Name:
-                    <input type="text" id="first-name" name="first-name" required>
-                </label>
-
-                <label for="last-name"><span class="asterisk">*</span> Last Name:
-                    <input type="text" id="last-name" name="last-name" required>
-                </label>
-
-                <label for="email"><span class="asterisk">*</span> Email:
-                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
-                </label>
-            </fieldset>
-
-            <fieldset class="form-midd">
-                <legend>Business Information</legend>
-                <label for="position-title">Business Position Title:
-                    <input type="text" id="position-title" name="position-title" pattern="[A-Za-z\s\-]{7,}"
-                        title="Please enter at least 7 alphabetical characters, spaces, or hyphens">
-                </label>
-
-                <label for="cell-phone"><span class="asterisk">*</span> Cell Phone Number:
-                    <input type="tel" id="cell-phone" name="cell-phone" placeholder="1234561245" required>
-                </label>
-
-                <label for="business-name"><span class="asterisk">*</span> Business Name/Title:
-                    <input type="text" id="business-name" name="business-name" required>
-                </label>
-
-                <label for="business-description">Business Description:
-                    <textarea id="business-description" name="business-description"></textarea>
-                </label>
-            </fieldset>
-
-            <fieldset class="form-bottom">
-                <legend>Membership</legend>
-
-                <div class="select-membership-title">Select your membership plan</div>
-                <div class="membership-container">
-
-                    <label class="options">
-                        <input type="radio" name="membership-level" value="NP Membership">
-                        NP Membership $0
-                    </label>
-                    <div class="membership-info">
-                        <p>Designed specifically for non-profit organizations.</p>
-                        <ul>
-                            <li>Access to the community forum and resource library.</li>
-                        </ul>
-                    </div>
-
-                    <label class="options">
-                        <input type="radio" name="membership-level" value="Bronze Membership">
-                        Bronze Membership $50/month
-                    </label>
-                    <div class="membership-info">
-                        <p>Offers essential features for individuals or organizations.</p>
-                        <ul>
-                            <li>Access to the community forum and resource library.</li>
-                            <li>Quarterly training sessions and workshops.</li>
-                            <li>Opportunity for limited advertising on the platform.</li>
-                            <li>10% discount on all events hosted by the platform.</li>
-                        </ul>
-                    </div>
-
-                    <label class="options">
-                        <input type="radio" name="membership-level" value="Silver Membership">
-                        Silver Membership $100/month
-                    </label>
-                    <div class="membership-info">
-                        <p>Provides an upgraded experience for members who seek additional benefits.</p>
-                        <ul>
-                            <li>All the benefits of Bronze Membership.</li>
-                            <li>Monthly training sessions and workshops.</li>
-                            <li>Enhanced advertising opportunities, including spotlights on the home page.</li>
-                            <li>20% discount on all events hosted by the platform.</li>
-                        </ul>
-                    </div>
-
-                    <label class="options">
-                        <input type="radio" name="membership-level" value="Gold Membership">
-                        Gold Membership $200/month
-                    </label>
-                    <div class="membership-info">
-                        <p>Offers the highest level of benefits and exclusive perks.</p>
-                        <ul>
-                            <li>All the benefits of Silver Membership.</li>
-                            <li>Unlimited access to training sessions and workshops.</li>
-                            <li>Priority advertising, featuring prominent placement on the home page.</li>
-                            <li>30% discount on all events hosted by the platform.</li>
-                            <li>Personalized support and consultation from platform experts.</li>
-                        </ul>
-                    </div>
-                </div>
-            </fieldset>
-
-            <input type="submit" class="form-button" value="Join to Well Union" action="thankyou.html">
+            <label for="name"><span class="asterisk">*</span>Name:
+            <input type="text" id="name" name="name" required>
+            </label>
+            <label for="email"><span class="asterisk">*</span>Email:
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            </label>
+            <label for="subject"><span class="asterisk">*</span>Subject:
+            <input type="text" id="subject" name="subject" required>
+            </label>
+            <label for="message"><span class="asterisk">*</span>Message:
+            <textarea id="message" name="message" rows="10" cols="30" required></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" class="form-button" value="Send message" name="" id="">
         </form>
     </main>
     <footer>
