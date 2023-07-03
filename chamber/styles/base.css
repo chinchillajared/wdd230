@@ -637,9 +637,31 @@ footer div a:hover {
 
 .contact-main form{
     width: 95%;
-    max-width: 50rem;
+    max-width: 50rem;;
+}
+
+.contact-main form fieldset{
+    border: none;
 }
 
 .contact-main form textarea{
-    width: 95%;
+    width: 94%;
+    font-size: 1rem;
+}
+
+.form-button-contact{
+    margin: 1% 0 3% 2.5%;
+    width: 89%;
+    padding: .8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-button-contact:hover{
+    background-color: rgb(3, 202, 209);
 }
