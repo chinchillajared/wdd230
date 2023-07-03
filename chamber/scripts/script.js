@@ -55,6 +55,57 @@ remove_banner.addEventListener('click', function(){
 })
 
 
+// ---------------------------------------------- Show 3 Chamber of Commerce members that has silver or gold subscription ----------------------------------------------
+
+const spotlight1 = document.querySelector('.spotlight1');
+const spotlight2 = document.querySelector('.spotlight2');
+const spotlight3 = document.querySelector('.spotlight3');
+
+let items = [];
+let random_items = [];
+
+fetch('json/data.json')
+.then(response => response.json())
+.then(data => {
+    data.businesses.forEach(business => {
+        let membership = business['membership'];
+        if(membership == 'Gold Membership' || membership == 'Silver Membership'){
+            items.push(business);
+        }
+    });
+
+    for(random_items.length = 0; random_items.length < 3;){
+        let number = Math.floor(Math.random() * items.length);
+        if(!random_items.includes(items[number])) {
+            random_items.push(items[number]);
+
+            const h2 = document.createElement('h2');
+            const img = document.createElement('img');
+            const p = document.createElement('p');
+            h2.textContent = items[number]['name'];
+            img.setAttribute('src', items[number]['logo']);
+            img.setAttribute('alt', items[number]['name']);
+            p.textContent = 'Address: ' + items[number]['address'];
+    
+            if(spotlight1.innerText == ''){
+                spotlight1.appendChild(h2);
+                spotlight1.appendChild(img);
+                spotlight1.appendChild(p);
+            }
+            else if(spotlight2.innerText == ''){
+                spotlight2.appendChild(h2);
+                spotlight2.appendChild(img);
+                spotlight2.appendChild(p);
+            }
+            else if(spotlight3.innerText == ''){
+                spotlight3.appendChild(h2);
+                spotlight3.appendChild(img);
+                spotlight3.appendChild(p);
+            }
+        }
+    }
+}); 
+
 
 //---------------------------------------------- Joint page ----------------------------------------------
 

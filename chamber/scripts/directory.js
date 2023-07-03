@@ -77,7 +77,7 @@ async function getDirectory() {
         const line2 = document.createElement("li");
         const website = document.createElement("a");
         website.innerText = business.website;
-        website.setAttribute('href', business.website);
+        website.setAttribute('href', '#');
         line2.appendChild(website);
         info.appendChild(line2); 
 
