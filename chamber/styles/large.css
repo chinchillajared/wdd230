@@ -247,17 +247,7 @@
      }
 
 /* ------------------------------------------ Contact page ------------------------------------------ */
-.contact-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    margin: auto;
-}
 
-.contact-main form textarea{
-    width: 95%;
-}
     
 }
 

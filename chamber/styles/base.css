@@ -632,8 +632,12 @@ footer div a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
     margin: auto;
+}
+
+.contact-main form{
+    width: 95%;
+    max-width: 50rem;
 }
 
 .contact-main form textarea{
