@@ -1,0 +1,14 @@
+{ 
+    "beaches":[
+        {
+            "name":"Laguna Beach",
+            "img":"images/laguna-beach.jpg",
+            "description" : "These sandy shores are known for their clear waters, tide pools, and scenic coves, providing opportunities for sunbathing, swimming, surfing, and exploring the marine life."
+        },
+        {
+            "name":"Huntington Beach",
+            "img":"images/huntington-beach.jpg",
+            "description":" Renowned worldwide as a premier surfing destination. It attracts surfers from across the globe due to its consistent waves, which are ideal for both beginners and advanced surfers."
+        }
+ ]
+}

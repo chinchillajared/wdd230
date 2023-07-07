@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=PT+Sans&display=swap');
+main{
+    width: 600px;
+    margin: 10rem auto 0 auto;
+}
+
+main table{
+    border-collapse: collapse;
+    background-color: #f3f3f3;
+}
+
+main table caption{
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main table td, th{
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.primary{
+    background-color: #FFFFFF;
+}
+
+.secondary{
+    background-color: #149911;
+    color: #000000;
+    font-weight: bold;
+}
+
+.butoons{
+    background-color: #3F8EFC;
+}
+
+.hover{
+    background-color: #558EDD;
+    font-weight: bold;
+}
+
+.title{
+    font-family: 'PT Sans', sans-serif;
+
+}
+
+.paragraph{
+    font-family: 'Noto Sans', sans-serif;
+}
