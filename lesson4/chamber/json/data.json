@@ -1,0 +1,77 @@
+{
+    "businesses": [
+      {
+        "name": "Green Acres Realty",
+        "address": "123 Main St, Cityville, USA",
+        "website": "www.greenacresrealty.com",
+        "phone": "+1-555-123-4567",
+        "logo": "images/logos/logo-of-a-green-ac 1.jpg",
+        "membership": "Silver Membership"
+      },
+      {
+        "name": "Dream Homes Property Management",
+        "address": "456 Elm St, Townsville, USA",
+        "website": "www.dreamhomesproperty.com",
+        "phone": "+1-555-987-6543",
+        "logo": "images/logos/logo-of-a-dream-0.jpg",
+        "membership": "Gold Membership"
+      },
+      {
+        "name": "Elite Builders and Renovations",
+        "address": "789 Oak St, Villageland, USA",
+        "website": "www.elitebuilders.com",
+        "phone": "+1-555-246-8135",
+        "logo": "images/logos/logo-of-a-elite-0.jpg",
+        "membership": "NP Membership"
+      },
+      {
+        "name": "Evergreen Landscaping Services",
+        "address": "321 Pine St, Greensville, USA",
+        "website": "www.evergreenlandscaping.com",
+        "phone": "+1-555-768-4321",
+        "logo": "images/logos/logo-of-a-everg-1.jpg",
+        "membership": "Bronze Membership"
+      },
+      {
+        "name": "Precision Home Inspections",
+        "address": "567 Maple St, Inspectionville, USA",
+        "website": "www.precisioninspections.com",
+        "phone": "+1-555-234-5678",
+        "logo": "images/logos/logo-of-a-preci-1.jpg",
+        "membership": "Silver Membership"
+      },
+      {
+        "name": "Picture Perfect Real Estate Photography",
+        "address": "890 Walnut St, Snaptown, USA",
+        "website": "www.pictureperfectphotos.com",
+        "phone": "+1-555-678-9012",
+        "logo": "images/logos/logo-of-a-pictu-1.jpg",
+        "membership": "Gold Membership"
+      },
+      {
+        "name": "Coastal Vacation Rentals",
+        "address": "432 Beach Rd, Seaside, USA",
+        "website": "www.coastalvacationrentals.com",
+        "phone": "+1-555-345-6789",
+        "logo": "images/logos/logo-of-a-coast-0.jpg",
+        "membership": "Silver Membership"
+      },
+      {
+        "name": "Secure Mortgage Solutions",
+        "address": "987 Oak St, Moneyville, USA",
+        "website": "www.securemortgagesolutions.com",
+        "phone": "+1-555-901-2345",
+        "logo": "images/logos/logo-of-a-secure-m-1.jpg",
+        "membership": "Bronze Membership"
+      },
+      {
+        "name": "Innovative Design Architects",
+        "address": "246 Pine St, Architectville, USA",
+        "website": "www.innovativedesignarchitects.com",
+        "phone": "+1-555-543-2109",
+        "logo": "images/logos/logo-of-a-innovati-0.jpg",
+        "membership": "Gold Membership"
+      }
+    ]
+  }
+  

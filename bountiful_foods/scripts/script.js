@@ -36,12 +36,54 @@ fetch("https://api.openweathermap.org/data/2.5/weather?lat=33.11&lon=-117.29&uni
 .then(data => {
     console.log(data);
     document.querySelector(".weather div img").setAttribute("src", 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png');
-    document.querySelector(".weather div p").innerText = data.weather[0].description;
-    document.querySelector(".weather div span").innerText = data.main.temp + "°F";
+    document.getElementById("condition").innerText = data.weather[0].description;
+    document.getElementById("temp").innerText = 'Temperature: ' + data.main.temp + "°F";
+    document.getElementById("humi").innerText = 'Himidity: ' + data.main.humidity + '%';
 })
 
 //Call 5 day / 3 hour forecast data. https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+const day1 = document.querySelector(".days div:nth-child(1)");
+const day2 = document.querySelector(".days div:nth-child(2)");
+const day3 = document.querySelector(".days div:nth-child(3)");
+
+const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+const today = new Date().getDay();
+let forecast = [];
+let last_day;
 fetch("https://api.openweathermap.org/data/2.5/forecast?lat=33.11&lon=-117.29&units=imperial&appid=be137bcff78136c8612eca7bc571f47f")
+.then(response => response.json())
+.then(data => {
+    data.list.forEach(element => {
+
+        //Get the unix time from the API and convert it to hours and days
+        let time = new Date(element.dt * 1000);
+        let day = time.getDay();  
+        let hour = time.getHours();
+
+
+        if(day != today && forecast.length < 3 && last_day != day && hour >= 9){
+            last_day = day;
+            forecast.push(element);
+
+            if(day1.querySelector("h3").innerText == ""){
+            day1.querySelector("h3").innerText = days[day];
+            day1.querySelector("img").setAttribute("src", 'https://openweathermap.org/img/wn/' + forecast[0].weather[0].icon + '.png');
+            day1.querySelector("p").innerText = forecast[0].main.temp + "°F";
+            }
+            else if(day2.querySelector("h3").innerText == ""){
+            day2.querySelector("h3").innerText = days[day];
+            day2.querySelector("img").setAttribute("src", 'https://openweathermap.org/img/wn/' + forecast[1].weather[0].icon + '.png');
+            day2.querySelector("p").innerText = forecast[1].main.temp + "°F";
+            }
+            else if(day3.querySelector("h3").innerText == ""){
+            day3.querySelector("h3").innerText = days[day];
+            day3.querySelector("img").setAttribute("src", 'https://openweathermap.org/img/wn/' + forecast[2].weather[0].icon + '.png');
+            day3.querySelector("p").innerText = forecast[2].main.temp + "°F";
+            }
+        }
+    });
+})
 
 
 //-------------------------- Footer --------------------------

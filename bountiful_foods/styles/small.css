@@ -274,26 +274,70 @@ main div p {
 }
 
 .weather{
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
 .weather-top{
     text-align: center;
     height: 10rem;
-    background-color: #d0d0d0d0;
+    background-color: #000000de;
+    color: #ffffff;
+    border: solid 2px #d0d0d0d0;
+    border-radius: 1rem;
+    box-shadow: 5px 0px 5px #d0d0d0d0;
+    font-weight: bold;
+    position: relative;
+    width: 95%;
 }
 
+.weather-top h2{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.weather-top img{
+    position: absolute;
+    top: 45%;
+    left: 23%;
+}
+
+.weather-top div{
+    width: 80%;
+    text-align: initial;
+    margin: 0 0 0 40%;
+}
+
+.weather-top div p{
+    margin: 0;
+    padding: .3rem;
+}
+
+
 .days{
+    margin-top: 5px;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
 }
 
 .days div{
-    width: 90%;
-    gap: 5px;
+    height: 10rem;
+    width: 30%;
+    background-color: #000000de;
+    color: #ffffff;
+    border: solid 2px #000000;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px #000000;
+    font-weight: bold;
 }
 
+.days div h3{
+    background-color: #ffffff;
+    color: #000000;
+}
