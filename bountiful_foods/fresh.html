@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods is your ultimate online destination for discovering a wide selection of locally sourced, 
+    healthy, and fresh food options. Our website serves as a platform where you can explore and order a
+    variety of organic produce, refreshing fruit drinks, customizable fruit bags, and more. Whether you're a 
+    local resident or a tourist visiting the scenic coastal areas from Los Angeles to San Diego, Bountiful Foods 
+    is dedicated to providing you with the convenience of accessing nutritious, made-to-order products. 
+    With a focus on supporting local farmers and incorporating international suppliers, we strive to deliver a 
+    bounty of organic goodness to satisfy your cravings and promote a healthy lifestyle.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/script.js" defer></script>
+    <title>Bountiful Foods home page</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo_v4.svg" alt="Bountiful Foods logo">
+        <button id="nav-toggle" class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fresh.html" class="active">Fresh</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="fruit-main">
+        <h1>Create your drink!</h1>
+        <form>
+            <fieldset>
+                <legend>Enter your information</legend>
+                <label>
+                    First Name
+                    <input type="text" name="first-name" id="first-name" required>
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <label>
+                    Phone Number
+                    <input type="tel" name="phone-number" id="phone-number" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Select 3 fruits from each list</legend>
+                <input list="fruits-column1" id="option1" name="option1">
+                <datalist id="fruits-column1">
+                    <option>Select</option>
+                </datalist>
+
+                <select name="fruits-column2" id="fruits-column2">
+                    <option>Select</option>
+                </select>
+                <select name="fruits-column3" id="fruits-column3">
+                    <option>Select</option>
+                </select>
+                <input type="submit" value="Place order">
+            </fieldset>
+        </form>
+        <div class="red"></div>
+    </main>
+    <footer>
+        <div>
+        &copy; <span id="year"></span>
+        </div> 
+        <span id="last-update"></span>
+    </footer>
+</body>
+
+</html>
