@@ -12,7 +12,7 @@ nav_toggle.addEventListener("click", () => {
 //-------------------------- Images banner -------------------
 //Change the image of the banner
 
-if(window.location.href.includes("index.html")){
+if(document.title == "Bountiful Foods home page"){
 let banner_index = 0;
 const banner_images = document.querySelector(".coastal-images");
 const banner_button = document.getElementById("next");
@@ -217,7 +217,7 @@ if(window.location.href.includes("fresh.html")){
 //-------------------------- Show the last order --------------------------
 
 
- if(window.location.href.includes("fresh.html") || window.location.href.includes("index.html")){
+ if(window.location.href.includes("fresh.html") || document.title == "Bountiful Foods home page"){
 
  if(localStorage.getItem("orders") != null){
     const orders = JSON.parse(localStorage.getItem("orders"));
@@ -245,6 +245,8 @@ else{
  }
 
 }
+
+console.log(document.title);
 
 
 
