@@ -246,7 +246,6 @@ else{
 
 }
 
-console.log(document.title);
 
 
 
