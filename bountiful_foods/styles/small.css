@@ -136,8 +136,8 @@ header nav ul li a {
 main div h1 {
     text-align: center;
     width: 100%;
-    background-color: #149911;
-    color: #ffffff;
+    background-color: #5dc75c;
+    color: #000000;
     margin: 0;
     padding: .5rem 0 .5rem 0;
     grid-column: 1/4;

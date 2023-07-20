@@ -35,7 +35,7 @@
     }
 
     .intro a:hover{
-        background-color: #a7a7a7d0;
+        background-color: #1cc0ddd0;
         color: #000000;
     }
 
@@ -82,6 +82,11 @@
 
     .fruit-main form{
         width: 700px;
+    }
+
+    #place-order:hover{
+        background-color: #1cc0ddd0;
+        color: #000000;
     }
 
 }
