@@ -5,6 +5,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto 7rem auto;
         gap: 1rem;
+        padding: 1rem;
     }
 
     .coastal-info{
@@ -46,11 +47,18 @@
         visibility: visible;
         transform: translateX(0);
         background-color: #ffffff;
+        width: 40%;
+        left: 1%;
     }
 
     header nav ul li a{
         color: #000000;
         width: 60%;
+        padding-top: .5rem;
+    }
+
+    header nav ul li a:hover{
+        border-bottom: solid 2px #1cc0ddd0;
     }
 
     .active {
@@ -69,6 +77,7 @@
     .drinks-card{
         grid-column: 3/4;
         max-width: 30rem;
+        height: fit-content;
     }
 
     .fruit-main form{
