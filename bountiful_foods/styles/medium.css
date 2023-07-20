@@ -1,2 +1,25 @@
 @media only screen and (min-width: 32.5em){
+    .intro h1{
+        font-size: 1.7rem;
+    }
+
+    .coastal-images{
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .intro img{
+        object-fit: cover;
+        max-height: 300px;
+    }
+
+    .weather{
+        max-width: 500px;
+        margin: 2.5rem auto 0 auto;; 
+    }
+
+    .drinks-card{
+        max-width: 25rem;
+        font-size: 1.2rem;
+    }
 }

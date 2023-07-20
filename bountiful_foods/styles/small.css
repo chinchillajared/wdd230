@@ -144,6 +144,10 @@ main div h1 {
     grid-row: 1;
 }
 
+.intro h1{
+    font-size: 1rem;
+}
+
 .intro img {
     grid-row: 2/4;
     object-fit: cover;
@@ -451,14 +455,22 @@ main form fieldset:nth-child(2){
 
 .about-main section{
     width: 80%;
-
+    padding: 1rem;
 }
 
 .about-main div{
     width: 80%;
-    background-color: #d3d3d3;
     margin: 0 0 1rem 0;
     padding: 1rem;
+    background-color: #1d1c1c;
+}
+
+.contact h2{
+    color: #f8b90b;
+}
+
+.contact p{
+    color: #ffffff;
 }
 
 .contact a p{
@@ -469,16 +481,17 @@ main form fieldset:nth-child(2){
     color: #ffffff;
     padding: .5rem;
     text-decoration: none;
+    font-size: .7rem;
 }
 
 .contact a div{
     position: relative;
     margin: auto;
+    width: 90%;
 }
 
 .map{
     width: 100%;
-    height: 100%;
     height: 20rem;
     margin: 1rem 0 2rem 0;
     border-radius: 1rem;
